@@ -3,5 +3,7 @@ class HelloController < ApplicationController
   end
 
   def world
+    @time = Time.now
+    @files = Dir.glob('*')
   end
 end
